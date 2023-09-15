@@ -5,7 +5,17 @@ const ChattingPage = () => {
   return (
      <div className="Chatting-Page">
         <SidePannel/>
-        <div className="profile-Sec"></div>
+        <div className="profile-Sec">
+            <div id="profile-dp">
+                <img src="" alt="" />
+            </div>
+            <h1>Alexa Joe</h1>
+        </div>
+        <div className="chatting-container">
+            <div className="write-message">
+              <input type="text" className = "message-input" />
+            </div>
+        </div>
      </div>
   )
 }
