@@ -1,9 +1,10 @@
 import "./App.css";
+import ChattingPage from "./pages/ChattingPage";
 
 function App() {
   return (
     <>
-      <h1 className="text-blue-500">Testing</h1>
+      <ChattingPage/>
     </>
   );
 }
