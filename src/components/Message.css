@@ -1,0 +1,19 @@
+.message{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#profile{
+    height : 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 1px solid rgb(166, 96, 223);
+}
+#message-text{
+    height: 30px;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid rgb(166, 96, 223);
+}

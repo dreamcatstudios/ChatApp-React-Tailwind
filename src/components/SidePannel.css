@@ -4,6 +4,43 @@
     width: 20%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(70, 70, 134);
+    background-image: linear-gradient(rgb(214, 214, 237),rgb(255, 255, 255));
+    background-color: white;
+    border: 1px solid rgb(135, 125, 125)
+    ;
     z-index: 99;
 }
+#infoSection h2{
+    position: relative;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 600;
+    left: 6%;
+}
+#infoSection-div{
+    display: grid;
+    position: relative;
+    top: 10%;
+    grid-template-rows: 10% 10% 10%;
+    height: 70vh;
+    width: 100%;
+    flex-direction: column;
+    gap: 5%;
+    padding: 5%;
+}
+#infoSection-div h1{
+    font-size: 1.2em;
+    color: rgb(81, 78, 78);
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+
+@media all and (min-width: 480px) and (max-width: 768px) { }
+
+@media all and (max-width: 480px) {
+    .sidePannel{
+        display: none;
+    }
+ }

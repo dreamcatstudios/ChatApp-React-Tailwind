@@ -9,14 +9,14 @@
     position: relative;
     height: 10vh;
     width: 100vw;
-    border : 1px solid black;
+    border-bottom : 1px solid rgb(149, 143, 143);
     align-items: center;
 }
 #profile-dp{
     position: absolute;
     height: 4vw;
     width: 4vw;
-    background-color: red;
+    border: 1px solid black;
     right: 3%;
     border-radius: 150%;
 }
@@ -30,16 +30,77 @@
     position: relative;
     height: 90vh;
     width: 80vw;
-    background-color: green;
     left: 20%;
     justify-content: center;
 }
-.message-input{
+.write-message{
+    display: flex;
     position: absolute;
+    align-items: center;
     height: 8%;
     width: 80%;
-    background-color: blue;
-    border-radius: 14px;
+    border : 1px solid rgb(166, 96, 223);
     top: 80%;
     left: 10%;
+    border-radius: 14px ;
+    overflow: hidden;
 }
+.message-input{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    border-radius: 14px solid black;
+    border: none;
+    padding: 4%;
+    align-items: center;
+    outline: none;
+}
+.write-message i{
+    color : black;
+    font-size: 1.6em;
+    margin: 0px 5px;
+}
+.profile-Sec i{
+    display: none;
+}
+.profile-Sec p{
+    display: none;  
+} 
+#message-display-container{
+    position: relative;
+    top: 7%;
+    height: 60vh;
+    width: 60vw;
+    overflow: hidden;
+    padding: 2%;
+    display: flex;
+    align-items: flex-end;
+}
+@media all and (max-width: 480px) {
+    #profile-dp{
+        height: 40px;
+        width: 40px;
+        border: 1px solid black;
+    }
+    .profile-Sec i{
+        display: block;
+        font-size: 1.7em;
+        color: rgb(113, 107, 107);
+    }
+    .profile-Sec h1{
+        position: relative;
+        left : 55%;
+    }
+    .write-message{
+        position: relative;
+        left: -10%;
+        width: 100%;
+    }
+    .profile-Sec p{
+        display: block;
+        position: absolute;
+        left: 10%;
+
+    }
+ }
+ 
