@@ -16,6 +16,7 @@
     color: black;
     font-weight: 600;
     left: 6%;
+    top: 3%;
 }
 #infoSection-div{
     display: grid;
@@ -29,8 +30,11 @@
     padding: 5%;
 }
 #infoSection-div h1{
+    display: flex;
     font-size: 1.2em;
     color: rgb(81, 78, 78);
+    align-items: center;
+    gap: 5%;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) { }
@@ -41,6 +45,9 @@
 
 @media all and (max-width: 480px) {
     .sidePannel{
+        width: 0;
+    }
+    .sidePannel #infoSection{
         display: none;
     }
  }

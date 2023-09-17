@@ -19,6 +19,12 @@
     border: 1px solid black;
     right: 3%;
     border-radius: 150%;
+    overflow: hidden;
+}
+#profile-dp img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .profile-Sec h1{
     position: absolute;
@@ -27,7 +33,7 @@
 }
 .chatting-container{
     display: flex;
-    position: relative;
+    position: absolute;
     height: 90vh;
     width: 80vw;
     left: 20%;
@@ -89,10 +95,10 @@
     }
     .profile-Sec h1{
         position: relative;
-        left : 55%;
+        left : 43%;
     }
+    
     .write-message{
-        position: relative;
         left: -10%;
         width: 100%;
     }
@@ -100,7 +106,11 @@
         display: block;
         position: absolute;
         left: 10%;
-
+    }
+    #message-display-container{
+        position: absolute;
+        left: -10%;
+        width: 100%;
     }
  }
  
